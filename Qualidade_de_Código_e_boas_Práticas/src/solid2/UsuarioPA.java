@@ -1,5 +1,10 @@
 package solid2;
 
-public class UsuarioPA {
+public interface UsuarioPA{
+	int maxRenovacoes();
+	String getNome();
 
+	
+
+	
 }

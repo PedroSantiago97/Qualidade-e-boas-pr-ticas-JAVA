@@ -1,7 +1,13 @@
 package solid2;
 
-public interface Usuarios {
-	public String emprestimoLivro();
-	public String duracaoEmprestimo();
+import java.util.List;
+
+public interface Usuarios extends UsuarioPA{
+	
+	String getTipo();
+	int limiteEmprestimoLivro();
+	int limiteDuracaoEmprestimo();
+	List<Livro> getLivrosEmprestados();
+	String getNome();
 
 }
